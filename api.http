@@ -1,0 +1,10 @@
+POST http://localhost:3333/subscriptions
+Content-Type: application/json 
+
+{
+  "name":"Luiz Althman",
+  "email":"luizalthmandev@gmail.com"
+}
+
+// Content-Type: application/json o formato que eu estou mandando. Json, igual o abaixo
+// esse obj é uma forma de validação (validatorCompiler)
