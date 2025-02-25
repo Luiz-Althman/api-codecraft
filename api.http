@@ -2,9 +2,31 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json 
 
 {
-  "name":"Luiz Althman",
-  "email":"luizalthmandev@gmail.com"
+  "name":"Usuário indicado 3",
+  "email":"indicad3@gmail.com",
+  "referrer":"41162752-8cf2-45d4-a481-2956959b992c"
 }
 
 // Content-Type: application/json o formato que eu estou mandando. Json, igual o abaixo
 // esse obj é uma forma de validação (validatorCompiler)
+
+###
+
+GET http://localhost:3333/invites/2734d394-0a10-481b-b120-ac5b1bf84257
+
+###
+
+GET http://localhost:3333/subscribers/2734d394-0a10-481b-b120-ac5b1bf84257/ranking/clicks
+
+
+###
+
+GET http://localhost:3333/subscribers/2734d394-0a10-481b-b120-ac5b1bf84257/ranking/count
+
+###
+
+GET http://localhost:3333/subscribers/2734d394-0a10-481b-b120-ac5b1bf84257/ranking/position
+
+###
+
+GET http://localhost:3333/ranking
