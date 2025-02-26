@@ -15,6 +15,7 @@ import { getRankingRoute } from './routes/get-ranking-route'
 import { getSubscriberInviteClicksRoute } from './routes/get-subscriber-invite-clicks-route'
 import { getSubscriberInvitesCountRoute } from './routes/get-subscriber-invites-count-route'
 import { getSubscriberRankPositionRoute } from './routes/get-subscriber-rank-position-route'
+import { sendMessageRoute } from './routes/send-message-route'
 import { subscribeToEventRoute } from './routes/subscribe-to-event-route'
 
 // validatorCompiler força que os dados que estão vindo na rota, seguem um formato especifico (name, email, cellphone)
@@ -54,6 +55,7 @@ app.register(getSubscriberInviteClicksRoute)
 app.register(getSubscriberInvitesCountRoute)
 app.register(getSubscriberRankPositionRoute)
 app.register(getRankingRoute)
+app.register(sendMessageRoute)
 
 app.listen({ port: env.PORT }).then(() => {
   console.log('HTTP server running')
